@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  bot:
+    build: .
+    environment:
+      MONGO_URL: $MONGO_URL
+      MONGO_DB: $MONGO_DB
+      BOT_TOKEN: $BOT_TOKEN
