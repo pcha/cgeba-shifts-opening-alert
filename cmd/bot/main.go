@@ -103,8 +103,8 @@ func checkUpdates() interface{} {
 	if err != nil {
 		return fmt.Sprintf("‼️ Error getting the updates: %q", err.Error())
 	}
-	if date := table["Matrimonios"].NextOpening; date != "fecha a confirmar" {
-		return "🎉 Los turnos para matrimonios se abriran el " + date
+	if date := table["Expedición de pasaportesrenovación y primera vez"].NextOpening; date != "fecha a confirmar" {
+		return "🎉 Los turnos para pasaportes se abriran el " + date
 	}
 	return nil
 }
